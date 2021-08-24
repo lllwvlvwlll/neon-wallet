@@ -51,10 +51,10 @@ const ReleaseNotesModal = ({ hideModal, theme }: Props) => (
         <div className={styles.release}>
           <div className={styles.releaseContent}>
             <small className={styles.date}>Aug 24th 2021 </small>
-            <h3>Release v2.8.0</h3>
+            <h3>Release v2.8.1</h3>
 
             <p>
-              In this update you will find the following updates:
+              In this release you will find the following updates:
               <br />
               <br />
               {/* eslint-disable-next-line */}
@@ -68,7 +68,7 @@ const ReleaseNotesModal = ({ hideModal, theme }: Props) => (
             <Github
               onClick={() =>
                 electron.shell.openExternal(
-                  'https://github.com/CityOfZion/neon-wallet/releases/tag/v2.8.0',
+                  'https://github.com/CityOfZion/neon-wallet/releases/tag/v2.8.1',
                 )
               }
             />
