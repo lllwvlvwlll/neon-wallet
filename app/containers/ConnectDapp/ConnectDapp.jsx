@@ -106,12 +106,11 @@ const ConnectDapp = ({ address, history, net }: Props) => {
     }
     const results = await new N3Helper(endpoint).rpcCall(account, testReq)
     const fee = convertToArbitraryDecimals(results.result.gasconsumed)
-    console.log({ fee })
     setFee(fee)
   }
 
   const getContractName = async request => {
-    const hash = request.params[2][1].value
+    const hash = request.params[0]
     const {
       data: {
         manifest: { name },
@@ -331,7 +330,7 @@ const ConnectDapp = ({ address, history, net }: Props) => {
               >
                 <label>hash</label>
                 <div className={styles.scriptHash}>
-                  {request.request.params[2][1].value}
+                  {request.request.params[0]}
                 </div>
               </div>
 
