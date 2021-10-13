@@ -37,14 +37,6 @@
       "app/dist/bundle.js",
       "app/dist/style.css"
     ],
-    "afterSign": "electron-builder-notarize",
-    "publish": [
-      {
-        "provider": "github",
-        "owner": "CityOfZion",
-        "repo": "neon-wallet"
-      }
-    ],
     "dmg": {
       "background": "./app/assets/images/background.tiff",
       "window": {
