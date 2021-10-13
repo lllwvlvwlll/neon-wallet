@@ -61,9 +61,4 @@ workflows:
   version: 2
   build_test_and_deploy:
     jobs:
-      - deploy_win64:
-          filters:
-            branches:
-              ignore: /.*/
-            tags:
-              only: /v.*/
+      - deploy_win64
